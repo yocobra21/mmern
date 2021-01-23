@@ -17,6 +17,7 @@ async function start() {
         app.listen(PORT, () => { console.log(`App port: ---> ${PORT}`) });
     } catch (e) {
         console.error(e);
+        process.exit(1);
     }
 }
 
